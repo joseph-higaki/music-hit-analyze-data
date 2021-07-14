@@ -1,0 +1,323 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "Spotify_Final_Databasecsv",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "pca",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "columns": [
+          {
+            "name": "Wks",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "T10",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pk",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PkStreams",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Total",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "length",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "popularity",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "danceability",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "acousticness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "energy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instrumentalness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "liveness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "loudness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "speechiness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "tempo",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "time_signature",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "mode",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valence",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "key",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "release_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instagram_followers",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "IGbEkGX"
+      },
+      {
+        "type": "pca",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "columns": [
+          {
+            "name": "Wks",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "T10",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pk",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PkStreams",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "length",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "popularity",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "danceability",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "acousticness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "energy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instrumentalness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "liveness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "loudness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "speechiness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "tempo",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "time_signature",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "mode",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valence",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "key",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "release_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instagram_followers",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "wpkFL39"
+      },
+      {
+        "type": "pca",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "columns": [
+          {
+            "name": "length",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "popularity",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "danceability",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "acousticness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "energy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instrumentalness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "liveness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "loudness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "speechiness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "tempo",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "time_signature",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "mode",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valence",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "key",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "release_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instagram_followers",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "Jn1kPon"
+      }
+    ],
+    "id": "RzjKx3l"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620232597289
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620227726772
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

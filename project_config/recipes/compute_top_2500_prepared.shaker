@@ -1,0 +1,111 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "instagram_username",
+          "Top2000",
+          "Top1000",
+          "Top100",
+          "energy",
+          "popularity",
+          "release_date",
+          "artist",
+          "album",
+          "song name",
+          "Total",
+          "PkStreams",
+          "Pos",
+          "Wks",
+          "Pk",
+          "T10"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "instagram_followers": 158,
+    "Top2000": 100,
+    "artist": 141,
+    "loudness": 100,
+    "liveness": 100,
+    "tempo": 100,
+    "danceability": 105,
+    "Top2500": 100,
+    "mode": 100,
+    "PkStreams": 113,
+    "popularity": 100,
+    "release_month": 113,
+    "Pk": 100,
+    "instagram_username": 150,
+    "key": 100,
+    "energy": 100,
+    "time_signature": 120,
+    "Top1000": 100,
+    "album": 225,
+    "length": 100,
+    "valence": 100,
+    "instrumentalness": 135,
+    "speechiness": 100,
+    "song name": 211,
+    "T10": 100,
+    "Pos": 100,
+    "release_date": 105,
+    "Total": 100,
+    "acousticness": 105,
+    "Top100": 100,
+    "Wks": 100
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

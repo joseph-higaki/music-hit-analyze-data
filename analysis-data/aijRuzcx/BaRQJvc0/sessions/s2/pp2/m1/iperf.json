@@ -1,0 +1,45 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 3, 
+    "modelInputNRows": 3014, 
+    "modelInputNCols": 540, 
+    "modelInputMemory": 13020480, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.49365732604262597, 
+            "scoreTime": 25.82766666666667, 
+            "fitTime": 0.10433333333333333, 
+            "score": 0.9445142245700051, 
+            "params": {
+                "n_neighbors": 5
+            }, 
+            "fitTimeStd": 0.012498888839501782, 
+            "scoreStd": 0.003958384635175026
+        }, 
+        {
+            "scoreTimeStd": 0.42790263690081026, 
+            "scoreTime": 25.896, 
+            "fitTime": 0.12133333333333333, 
+            "score": 0.9540580313509027, 
+            "params": {
+                "n_neighbors": 10
+            }, 
+            "fitTimeStd": 0.015326085243430198, 
+            "scoreStd": 0.003677178658435237
+        }, 
+        {
+            "scoreTimeStd": 8.493970096486095, 
+            "scoreTime": 19.767, 
+            "fitTime": 0.14333333333333334, 
+            "score": 0.9566903556495372, 
+            "params": {
+                "n_neighbors": 15
+            }, 
+            "fitTimeStd": 0.004642796092394706, 
+            "scoreStd": 0.002301750085577094
+        }
+    ], 
+    "gridBestScore": 0.9566903556495372, 
+    "modelInputIsSparse": false
+}

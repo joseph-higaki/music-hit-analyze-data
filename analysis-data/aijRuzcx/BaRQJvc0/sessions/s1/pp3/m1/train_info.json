@@ -1,0 +1,118 @@
+{
+  "state": "ABORTED",
+  "failure": {
+    "errorType": "java.lang.InterruptedException",
+    "detailedMessage": "InterruptedException",
+    "detailedMessageHTML": "\u003cspan\u003e\u003cspan class\u003d\"err-type\"\u003eInterruptedException\u003c/span\u003e\u003c/span\u003e",
+    "stackTraceStr": "java.lang.InterruptedException\n\tat java.lang.Object.wait(Native Method)\n\tat java.lang.Thread.join(Thread.java:1252)\n\tat java.lang.Thread.join(Thread.java:1326)\n\tat com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.join(PRNSTrainThread.java:247)\n\tat com.dataiku.dip.analysis.ml.prediction.PyRegularNoSavePredictionHandler.train(PyRegularNoSavePredictionHandler.java:102)\n\tat com.dataiku.dip.analysis.coreservices.PredictionService$TrainWorkThread.executeProcess(PredictionService.java:1073)\n\tat com.dataiku.dip.analysis.coreservices.PredictionService$TrainWorkThread.execute(PredictionService.java:1107)\n\tat com.dataiku.dip.futures.FutureThreadBase.run(FutureThreadBase.java:96)\n",
+    "stackTrace": [
+      {
+        "file": "Object.java",
+        "line": -2,
+        "function": "java.lang.Object.wait"
+      },
+      {
+        "file": "Thread.java",
+        "line": 1252,
+        "function": "java.lang.Thread.join"
+      },
+      {
+        "file": "Thread.java",
+        "line": 1326,
+        "function": "java.lang.Thread.join"
+      },
+      {
+        "file": "PRNSTrainThread.java",
+        "line": 247,
+        "function": "com.dataiku.dip.analysis.ml.shared.PRNSTrainThread.join"
+      },
+      {
+        "file": "PyRegularNoSavePredictionHandler.java",
+        "line": 102,
+        "function": "com.dataiku.dip.analysis.ml.prediction.PyRegularNoSavePredictionHandler.train"
+      },
+      {
+        "file": "PredictionService.java",
+        "line": 1073,
+        "function": "com.dataiku.dip.analysis.coreservices.PredictionService$TrainWorkThread.executeProcess"
+      },
+      {
+        "file": "PredictionService.java",
+        "line": 1107,
+        "function": "com.dataiku.dip.analysis.coreservices.PredictionService$TrainWorkThread.execute"
+      },
+      {
+        "file": "FutureThreadBase.java",
+        "line": 96,
+        "function": "com.dataiku.dip.futures.FutureThreadBase.run"
+      }
+    ]
+  },
+  "preSearchDescription": {
+    "gridLength": 3,
+    "searchStrategy": "GRID",
+    "importantParams": [
+      {
+        "name": "k",
+        "vals": [
+          "5",
+          "10",
+          "15"
+        ]
+      },
+      {
+        "name": "p",
+        "val": "5"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [
+      "Fitting model",
+      "Saving model",
+      "Scoring model"
+    ],
+    "stack": [
+      {
+        "name": "Hyperparameter searching",
+        "target": 0.0,
+        "cur": 0.0,
+        "important": false,
+        "depth": 0,
+        "startTimestamp": 1620414058663,
+        "msSinceStart": 0
+      }
+    ],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 89
+      },
+      {
+        "name": "Loading test set",
+        "time": 33
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 111
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 140
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 151
+      }
+    ]
+  },
+  "startTime": 1620414058135,
+  "endTime": 0,
+  "preprocessingTime": 0,
+  "trainingTime": 0,
+  "hyperparamsSearchTime": 0
+}

@@ -1,0 +1,64 @@
+{
+    "gridSize": 3, 
+    "nThreads": 4, 
+    "metric": "ROC_AUC", 
+    "gridPoints": [
+        {
+            "scoreTimeMean": 25827.666666666668, 
+            "best_iteration": null, 
+            "time": 77796, 
+            "trainScoreMean": 0.9799213654733635, 
+            "finishedAt": 1620414268020, 
+            "fitTimeStd": 12.498888839501783, 
+            "testScoreStd": 0.003958384635175026, 
+            "scoreTimeStd": 493.657326042626, 
+            "parameters": {
+                "n_neighbors": 5
+            }, 
+            "testScoreMean": 0.9445142245700051, 
+            "score": 0.9445142245700051, 
+            "trainScoreStd": 0.0008093513681176397, 
+            "testScoreGibMean": 0.9445142245700051, 
+            "fitTimeMean": 104.33333333333333
+        }, 
+        {
+            "scoreTimeMean": 25896.0, 
+            "best_iteration": null, 
+            "time": 78052, 
+            "trainScoreMean": 0.9737895681804758, 
+            "finishedAt": 1620414293201, 
+            "fitTimeStd": 15.326085243430198, 
+            "testScoreStd": 0.003677178658435237, 
+            "scoreTimeStd": 427.90263690081025, 
+            "parameters": {
+                "n_neighbors": 10
+            }, 
+            "testScoreMean": 0.9540580313509027, 
+            "score": 0.9540580313509027, 
+            "trainScoreStd": 0.002249303830802008, 
+            "testScoreGibMean": 0.9540580313509027, 
+            "fitTimeMean": 121.33333333333333
+        }, 
+        {
+            "scoreTimeMean": 19767.0, 
+            "best_iteration": null, 
+            "time": 59731, 
+            "trainScoreMean": 0.9696455784492374, 
+            "finishedAt": 1620414300089, 
+            "fitTimeStd": 4.642796092394706, 
+            "testScoreStd": 0.002301750085577094, 
+            "scoreTimeStd": 8493.970096486095, 
+            "parameters": {
+                "n_neighbors": 15
+            }, 
+            "testScoreMean": 0.9566903556495372, 
+            "score": 0.9566903556495372, 
+            "trainScoreStd": 0.0018402921717285187, 
+            "testScoreGibMean": 0.9566903556495372, 
+            "fitTimeMean": 143.33333333333334
+        }
+    ], 
+    "timeout": null, 
+    "startedAt": 1620414241114, 
+    "nSplits": 3
+}

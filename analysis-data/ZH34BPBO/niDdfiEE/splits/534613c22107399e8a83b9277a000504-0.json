@@ -1,0 +1,77 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1620413709821,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dSpotify_Final_Databasecsv,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "534613c22107399e8a83b9277a000504-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Pos","type":"bigint"},
+      {"name":"Wks","type":"bigint"},
+      {"name":"T10","type":"bigint"},
+      {"name":"Pk","type":"bigint"},
+      {"name":"PkStreams","type":"bigint"},
+      {"name":"Total","type":"bigint"},
+      {"name":"song name","type":"string"},
+      {"name":"album","type":"string"},
+      {"name":"artist","type":"string"},
+      {"name":"release_date","type":"string"},
+      {"name":"length","type":"bigint"},
+      {"name":"popularity","type":"bigint"},
+      {"name":"danceability","type":"bigint"},
+      {"name":"acousticness","type":"bigint"},
+      {"name":"energy","type":"bigint"},
+      {"name":"instrumentalness","type":"double"},
+      {"name":"liveness","type":"bigint"},
+      {"name":"loudness","type":"bigint"},
+      {"name":"speechiness","type":"bigint"},
+      {"name":"tempo","type":"bigint"},
+      {"name":"time_signature","type":"bigint"},
+      {"name":"mode","type":"bigint"},
+      {"name":"valence","type":"bigint"},
+      {"name":"key","type":"bigint"},
+      {"name":"release_month","type":"bigint"},
+      {"name":"Top100","type":"bigint"},
+      {"name":"Top1000","type":"bigint"},
+      {"name":"Top2000","type":"bigint"},
+      {"name":"Top2500","type":"bigint"},
+      {"name":"instagram_username","type":"string"},
+      {"name":"instagram_followers","type":"bigint"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-534613c22107399e8a83b9277a000504-0.csv.gz",
+  "testPath": "test-534613c22107399e8a83b9277a000504-0.csv.gz",
+  "trainRows": 3014,
+  "testRows": 741,
+  "fullRows": 0
+}

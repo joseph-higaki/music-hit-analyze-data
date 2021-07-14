@@ -1,0 +1,973 @@
+[2021/05/07-19:03:58.813] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction]  - ******************************************
+[2021/05/07-19:03:58.813] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction]  - ** Start train session s2
+[2021/05/07-19:03:58.813] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction]  - ******************************************
+[2021/05/07-19:03:58.817] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.splits] T-BaRQJvc0 - [ct: 4] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=Spotify_Final_Databasecsv,sel=(method=head-s,records=100000),r=0.8,s=1337 i=534613c22107399e8a83b9277a000504-0
+[2021/05/07-19:03:58.819] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.splits] T-BaRQJvc0 - [ct: 6] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=Spotify_Final_Databasecsv,sel=(method=head-s,records=100000),r=0.8,s=1337, instance id: 534613c22107399e8a83b9277a000504-0
+[2021/05/07-19:03:58.820] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.splits] T-BaRQJvc0 - [ct: 7] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=Spotify_Final_Databasecsv,sel=(method=head-s,records=100000),r=0.8,s=1337 i=534613c22107399e8a83b9277a000504-0
+[2021/05/07-19:03:58.821] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.splits] T-BaRQJvc0 - [ct: 8] Search for split: p=type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=Spotify_Final_Databasecsv,sel=(method=head-s,records=100000),r=0.8,s=1337 i=534613c22107399e8a83b9277a000504-0
+[2021/05/07-19:03:58.829] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.ml.python] T-BaRQJvc0 - Joining processing thread ...
+[2021/05/07-19:03:58.829] [MRT-2270] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /home/dataiku/dss/analysis-data/SPOTIFY_FINAL/aijRuzcx/BaRQJvc0/sessions/s2/pp1
+[2021/05/07-19:03:58.830] [MRT-2270] [INFO] [dku.block.link]  - Started a socket on port 34147
+[2021/05/07-19:03:58.830] [MRT-2270] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /home/dataiku/dss/analysis-data/SPOTIFY_FINAL/aijRuzcx/BaRQJvc0/sessions/s2/pp1/train.log
+[2021/05/07-19:03:58.830] [MRT-2270] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2021/05/07-19:03:58.831] [MRT-2270] [WARN] [dku.code.projectLibs]  - External libraries file not found: /home/dataiku/dss/config/projects/SPOTIFY_FINAL/lib/external-libraries.json
+[2021/05/07-19:03:58.831] [MRT-2270] [INFO] [dku.code.projectLibs]  - EXTERNAL LIBS FROM SPOTIFY_FINAL is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2021/05/07-19:03:58.831] [MRT-2270] [INFO] [dku.code.projectLibs]  - chunkFolder is /home/dataiku/dss/config/projects/SPOTIFY_FINAL/lib/R
+[2021/05/07-19:03:58.831] [MRT-2270] [INFO] [dku.python.single_command.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2021/05/07-19:03:58.831] [MRT-2270] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-SPOTIFY_FINAL-DpgWvEF on behalf of admin id=analysis-ml-SPOTIFY_FINAL-DpgWvEF_UI3k6jNA7OEJ
+[2021/05/07-19:03:58.831] [MRT-2270] [INFO] [dku.security.process]  - Starting process (regular)
+[2021/05/07-19:03:58.883] [MRT-2270] [INFO] [dku.security.process]  - Process started with pid=7085
+[2021/05/07-19:03:58.884] [MRT-2270] [INFO] [dku.processes.cgroups]  - Will use cgroups []
+[2021/05/07-19:03:58.884] [MRT-2270] [INFO] [dku.processes.cgroups]  - Applying rules to used cgroups: []
+[2021/05/07-19:03:59.012] [KNL-python-single-command-kernel-monitor-2276] [INFO] [dku.resourceusage]  - Reporting start of CRU:{"context":{"type":"ANALYSIS_ML_TRAIN","authIdentifier":"admin","projectKey":"SPOTIFY_FINAL","analysisId":"aijRuzcx","mlTaskId":"BaRQJvc0","sessionId":"s2"},"type":"LOCAL_PROCESS","id":"CbJiwwMpaTZjuc0Q","startTime":1620414239012,"localProcess":{"cpuCurrent":0.0}}
+[2021/05/07-19:03:59.086] [process-resource-monitor-7085-2279] [DEBUG] [dku.resource]  - Process stats for pid 7085: {"pid":7085,"commandName":"/home/dataiku/dss/bin/python","cpuUserTimeMS":90,"cpuSystemTimeMS":0,"cpuChildrenUserTimeMS":0,"cpuChildrenSystemTimeMS":0,"cpuTotalMS":90,"cpuCurrent":0.0,"vmSizeMB":97,"vmRSSMB":13,"vmHWMMB":13,"vmRSSAnonMB":9,"vmDataMB":8,"vmSizePeakMB":97,"vmRSSPeakMB":13,"vmRSSTotalMBS":0,"majorFaults":0,"childrenMajorFaults":0}
+Installing debugging signal handler
+[2021-05-07 19:04:00,112] [7085/MainThread] [INFO] [root] Connecting to parent at port 34147
+[2021/05/07-19:04:00.113] [MRT-2270] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2021/05/07-19:04:00.114] [MRT-2270] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+[2021-05-07 19:04:00,113] [7085/MainThread] [INFO] [root] Connected to parent at port 34147
+[2021-05-07 19:04:00,656] [7085/MainThread] [INFO] [root] Running analysis command: train_prediction_models_nosave
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.commands] PPS is {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'max_abs_correlation': 1.0, u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'0', u'sampleFreq': 1775}, {u'mappedValue': 1, u'sourceValue': u'1', u'sampleFreq': 1980}], u'per_feature': {u'popularity': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'energy': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instagram_followers': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'release_month': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'T10': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Pk': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top100': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instagram_username': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'album': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'acousticness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'PkStreams': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'danceability': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top2500': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top2000': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'song name': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'tempo': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'speechiness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instrumentalness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'key': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'loudness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Total': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'artist': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'release_date': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'DateSource', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'liveness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Pos': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'length': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'mode': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'time_signature': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top1000': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Wks': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'valence': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [root] Reading with dtypes: None
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pos: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Wks: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for T10: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pk: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for PkStreams: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Total: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for song name: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for album: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for artist: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_date: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,657] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for length: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for popularity: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for danceability: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for acousticness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for energy: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instrumentalness: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for liveness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for loudness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for speechiness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for tempo: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for time_signature: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for mode: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for valence: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for key: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_month: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top100: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top1000: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2000: <type 'numpy.object_'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2500: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_username: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_followers: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,658] [7085/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'popularity': <type 'numpy.float64'>, u'energy': <type 'numpy.float64'>, u'instagram_followers': <type 'numpy.float64'>, u'speechiness': <type 'numpy.float64'>, u'T10': <type 'numpy.float64'>, u'Pk': <type 'numpy.float64'>, u'Top100': <type 'numpy.float64'>, u'instagram_username': 'str', u'album': 'str', u'acousticness': <type 'numpy.float64'>, u'PkStreams': <type 'numpy.float64'>, u'danceability': <type 'numpy.float64'>, u'Top2500': <type 'numpy.float64'>, u'Top2000': <type 'numpy.object_'>, u'song name': 'str', u'tempo': <type 'numpy.float64'>, u'release_month': <type 'numpy.float64'>, u'instrumentalness': <type 'numpy.float64'>, u'key': <type 'numpy.float64'>, u'Top1000': <type 'numpy.float64'>, u'valence': <type 'numpy.float64'>, u'artist': 'str', u'release_date': 'str', u'liveness': <type 'numpy.float64'>, u'Pos': <type 'numpy.float64'>, u'length': <type 'numpy.float64'>, u'mode': <type 'numpy.float64'>, u'time_signature': <type 'numpy.float64'>, u'loudness': <type 'numpy.float64'>, u'Wks': <type 'numpy.float64'>, u'Total': <type 'numpy.float64'>}
+[2021-05-07 19:04:00,716] [7085/MainThread] [INFO] [root] Loaded table
+[2021-05-07 19:04:00,717] [7085/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2021-05-07 19:04:00,717] [7085/MainThread] [INFO] [dataiku.doctor.commands] Loaded train df: shape=(3014,31)
+[2021-05-07 19:04:00,717] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Pos (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Wks (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : T10 (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Pk (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : PkStreams (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Total (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : song name (object)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : album (object)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : artist (object)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : release_date (object)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : length (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : popularity (float64)
+[2021-05-07 19:04:00,718] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : danceability (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : acousticness (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : energy (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : instrumentalness (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : liveness (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : loudness (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : speechiness (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : tempo (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : time_signature (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : mode (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : valence (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : key (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : release_month (float64)
+[2021-05-07 19:04:00,719] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Top100 (float64)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Top1000 (float64)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Top2000 (object)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : Top2500 (float64)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : instagram_username (object)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.commands] Train col : instagram_followers (float64)
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2021-05-07 19:04:00,720] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [root] Reading with dtypes: None
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pos: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Wks: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for T10: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pk: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for PkStreams: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Total: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for song name: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for album: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for artist: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_date: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for length: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for popularity: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for danceability: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for acousticness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for energy: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instrumentalness: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for liveness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for loudness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for speechiness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for tempo: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for time_signature: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for mode: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for valence: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,721] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for key: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_month: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top100: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top1000: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2000: <type 'numpy.object_'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2500: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_username: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_followers: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:00,722] [7085/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'popularity': <type 'numpy.float64'>, u'energy': <type 'numpy.float64'>, u'instagram_followers': <type 'numpy.float64'>, u'speechiness': <type 'numpy.float64'>, u'T10': <type 'numpy.float64'>, u'Pk': <type 'numpy.float64'>, u'Top100': <type 'numpy.float64'>, u'instagram_username': 'str', u'album': 'str', u'acousticness': <type 'numpy.float64'>, u'PkStreams': <type 'numpy.float64'>, u'danceability': <type 'numpy.float64'>, u'Top2500': <type 'numpy.float64'>, u'Top2000': <type 'numpy.object_'>, u'song name': 'str', u'tempo': <type 'numpy.float64'>, u'release_month': <type 'numpy.float64'>, u'instrumentalness': <type 'numpy.float64'>, u'key': <type 'numpy.float64'>, u'Top1000': <type 'numpy.float64'>, u'valence': <type 'numpy.float64'>, u'artist': 'str', u'release_date': 'str', u'liveness': <type 'numpy.float64'>, u'Pos': <type 'numpy.float64'>, u'length': <type 'numpy.float64'>, u'mode': <type 'numpy.float64'>, u'time_signature': <type 'numpy.float64'>, u'loudness': <type 'numpy.float64'>, u'Wks': <type 'numpy.float64'>, u'Total': <type 'numpy.float64'>}
+[2021-05-07 19:04:00,750] [7085/MainThread] [INFO] [root] Loaded table
+[2021-05-07 19:04:00,752] [7085/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2021-05-07 19:04:00,752] [7085/MainThread] [INFO] [dataiku.doctor.commands] Loaded test df: shape=(741,31)
+[2021-05-07 19:04:00,752] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2021-05-07 19:04:00,752] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2021-05-07 19:04:00,753] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at popularity... (type=NUMERIC)
+[2021-05-07 19:04:00,753] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,754] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at energy... (type=NUMERIC)
+[2021-05-07 19:04:00,754] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,755] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at instagram_followers... (type=NUMERIC)
+[2021-05-07 19:04:00,755] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,756] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at release_month... (type=NUMERIC)
+[2021-05-07 19:04:00,756] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,757] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at T10... (type=NUMERIC)
+[2021-05-07 19:04:00,757] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,757] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Pk... (type=NUMERIC)
+[2021-05-07 19:04:00,758] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,758] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Top100... (type=NUMERIC)
+[2021-05-07 19:04:00,758] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,759] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at instagram_username... (type=CATEGORY)
+[2021-05-07 19:04:00,773] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at album... (type=CATEGORY)
+[2021-05-07 19:04:00,776] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at acousticness... (type=NUMERIC)
+[2021-05-07 19:04:00,776] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,776] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at PkStreams... (type=NUMERIC)
+[2021-05-07 19:04:00,777] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,777] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at danceability... (type=NUMERIC)
+[2021-05-07 19:04:00,777] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,778] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Top2500... (type=NUMERIC)
+[2021-05-07 19:04:00,778] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,779] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Top2000... (type=NUMERIC)
+[2021-05-07 19:04:00,779] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at song name... (type=CATEGORY)
+[2021-05-07 19:04:00,782] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at tempo... (type=NUMERIC)
+[2021-05-07 19:04:00,782] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,794] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at speechiness... (type=NUMERIC)
+[2021-05-07 19:04:00,794] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,795] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at instrumentalness... (type=NUMERIC)
+[2021-05-07 19:04:00,795] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,796] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at key... (type=NUMERIC)
+[2021-05-07 19:04:00,796] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,796] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at loudness... (type=NUMERIC)
+[2021-05-07 19:04:00,797] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,797] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Total... (type=NUMERIC)
+[2021-05-07 19:04:00,797] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,798] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at artist... (type=CATEGORY)
+[2021-05-07 19:04:00,800] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at release_date... (type=CATEGORY)
+[2021-05-07 19:04:00,803] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at liveness... (type=NUMERIC)
+[2021-05-07 19:04:00,803] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,804] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Pos... (type=NUMERIC)
+[2021-05-07 19:04:00,817] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,818] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at length... (type=NUMERIC)
+[2021-05-07 19:04:00,818] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,819] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at mode... (type=NUMERIC)
+[2021-05-07 19:04:00,819] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,820] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at time_signature... (type=NUMERIC)
+[2021-05-07 19:04:00,820] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,821] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Top1000... (type=NUMERIC)
+[2021-05-07 19:04:00,821] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,821] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Wks... (type=NUMERIC)
+[2021-05-07 19:04:00,822] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,823] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at valence... (type=NUMERIC)
+[2021-05-07 19:04:00,823] [7085/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2021-05-07 19:04:00,825] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2021-05-07 19:04:00,826] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] generating interactions
+[2021-05-07 19:04:00,827] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'max_abs_correlation': 1.0, u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'0', u'sampleFreq': 1775}, {u'mappedValue': 1, u'sourceValue': u'1', u'sampleFreq': 1980}], u'per_feature': {u'popularity': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'energy': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instagram_followers': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'release_month': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'T10': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Pk': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top100': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instagram_username': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'album': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'acousticness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'PkStreams': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'danceability': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top2500': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top2000': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'song name': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'tempo': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'speechiness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'instrumentalness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'key': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'loudness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Total': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'artist': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'release_date': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'nb_bins_hashing': 1048576, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'DateSource', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'liveness': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Pos': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'length': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'mode': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'time_signature': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Top1000': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Wks': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'valence': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2021-05-07 19:04:00,827] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] No feature selection to perform
+[2021-05-07 19:04:00,827] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2021-05-07 19:04:00,827] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 3014
+[2021-05-07 19:04:00,827] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2021-05-07 19:04:00,843] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:00,843] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'liveness': 350.81917717319175, u'energy': 580.1237558062376, u'instagram_followers': 258191863.9183809, u'release_month': 6.3234903782349035, u'T10': 82.39700374531836, u'Pk': 89.14134041141341, u'Top100': 0.025215660252156602, u'acousticness': 379.63669542136694, u'PkStreams': 8226404.849369609, u'danceability': 606.8304578633046, u'Top2500': 0.6619110816191108, u'tempo': 121810.91639017916, u'speechiness': 383.2528201725282, u'instrumentalness': 72.3979314873921, u'key': 5.234240212342402, u'Top1000': 0.2591240875912409, u'valence': 448.6413404114134, u'popularity': 47.08526874585269, u'Pos': 2439.78400796284, u'length': 210218.97810218978, u'mode': 0.5759787657597877, u'time_signature': 3.9701393497013937, u'loudness': -5946.709688122097, u'Wks': 14.262773722627736, u'Total': 93702308.8669542}
+[2021-05-07 19:04:00,847] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (popularity)
+[2021-05-07 19:04:00,848] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale popularity (avg=47.0852687459 std=30.7237030583 shift=47.0852687459 inv_scale=0.0325481599045)
+[2021-05-07 19:04:00,850] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled popularity (avg=-3.79203414964e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,850] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (energy)
+[2021-05-07 19:04:00,850] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale energy (avg=580.123755806 std=238.689826627 shift=580.123755806 inv_scale=0.00418953758579)
+[2021-05-07 19:04:00,851] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled energy (avg=-6.7236362463e-18 std=1.0) nulls=0
+[2021-05-07 19:04:00,851] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (instagram_followers)
+[2021-05-07 19:04:00,851] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale instagram_followers (avg=258191863.918 std=468990898.047 shift=258191863.918 inv_scale=2.1322375427e-09)
+[2021-05-07 19:04:00,852] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled instagram_followers (avg=5.98577443602e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,852] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (release_month)
+[2021-05-07 19:04:00,852] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale release_month (avg=6.32349037823 std=3.45813695678 shift=6.32349037823 inv_scale=0.289173046788)
+[2021-05-07 19:04:00,866] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled release_month (avg=8.69318625785e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,866] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (T10)
+[2021-05-07 19:04:00,866] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale T10 (avg=82.3970037453 std=23.9777106199 shift=82.3970037453 inv_scale=0.0123917755339)
+[2021-05-07 19:04:00,867] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled T10 (avg=-1.3942249994e-17 std=0.297126407819) nulls=0
+[2021-05-07 19:04:00,867] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Pk)
+[2021-05-07 19:04:00,867] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Pk (avg=89.1413404114 std=60.5094144984 shift=89.1413404114 inv_scale=0.0165263539284)
+[2021-05-07 19:04:00,868] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Pk (avg=-3.69828771308e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,868] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Top100)
+[2021-05-07 19:04:00,868] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top100 (avg=0.0252156602522 std=0.156805575973 shift=0.0252156602522 inv_scale=6.37732423606)
+[2021-05-07 19:04:00,869] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top100 (avg=4.1807595504e-15 std=1.0) nulls=0
+[2021-05-07 19:04:00,869] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (acousticness)
+[2021-05-07 19:04:00,869] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale acousticness (avg=379.636695421 std=268.006159297 shift=379.636695421 inv_scale=0.00373125753014)
+[2021-05-07 19:04:00,870] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled acousticness (avg=1.24430437199e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,870] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (PkStreams)
+[2021-05-07 19:04:00,870] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale PkStreams (avg=8226404.84937 std=7395322.52434 shift=8226404.84937 inv_scale=1.35220606905e-07)
+[2021-05-07 19:04:00,871] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled PkStreams (avg=-5.39272232266e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,871] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (danceability)
+[2021-05-07 19:04:00,871] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale danceability (avg=606.830457863 std=221.203030581 shift=606.830457863 inv_scale=0.00452073372311)
+[2021-05-07 19:04:00,872] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled danceability (avg=8.5016414759e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,872] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Top2500)
+[2021-05-07 19:04:00,872] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top2500 (avg=0.661911081619 std=0.473137479738 shift=0.661911081619 inv_scale=2.11355059116)
+[2021-05-07 19:04:00,873] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top2500 (avg=2.64110785885e-15 std=1.0) nulls=0
+[2021-05-07 19:04:00,873] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (tempo)
+[2021-05-07 19:04:00,873] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale tempo (avg=121810.91639 std=29463.2993823 shift=121810.91639 inv_scale=3.3940530116e-05)
+[2021-05-07 19:04:00,873] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled tempo (avg=1.30397793868e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,873] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (speechiness)
+[2021-05-07 19:04:00,874] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale speechiness (avg=383.252820173 std=231.973924275 shift=383.252820173 inv_scale=0.00431082934483)
+[2021-05-07 19:04:00,874] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled speechiness (avg=7.33671768181e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,874] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (instrumentalness)
+[2021-05-07 19:04:00,875] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale instrumentalness (avg=72.3979314874 std=181.008061672 shift=72.3979314874 inv_scale=0.00552461581415)
+[2021-05-07 19:04:00,875] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled instrumentalness (avg=1.15479402196e-15 std=1.0) nulls=0
+[2021-05-07 19:04:00,875] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (key)
+[2021-05-07 19:04:00,875] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale key (avg=5.23424021234 std=3.6668710163 shift=5.23424021234 inv_scale=0.272712074015)
+[2021-05-07 19:04:00,889] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled key (avg=2.99030873056e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,889] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (loudness)
+[2021-05-07 19:04:00,890] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale loudness (avg=-5946.70968812 std=3044.59196783 shift=-5946.70968812 inv_scale=0.000328451237659)
+[2021-05-07 19:04:00,890] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled loudness (avg=-3.38886921916e-18 std=1.0) nulls=0
+[2021-05-07 19:04:00,890] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Total)
+[2021-05-07 19:04:00,890] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Total (avg=93702308.867 std=197402814.461 shift=93702308.867 inv_scale=5.06578390349e-09)
+[2021-05-07 19:04:00,891] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Total (avg=1.33712992017e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,891] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (liveness)
+[2021-05-07 19:04:00,891] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale liveness (avg=350.819177173 std=303.870059555 shift=350.819177173 inv_scale=0.00329088032386)
+[2021-05-07 19:04:00,892] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled liveness (avg=6.8514095083e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,892] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Pos)
+[2021-05-07 19:04:00,892] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Pos (avg=2439.78400796 std=1385.93520978 shift=2439.78400796 inv_scale=0.000721534450488)
+[2021-05-07 19:04:00,893] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Pos (avg=1.52278101652e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,893] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (length)
+[2021-05-07 19:04:00,893] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale length (avg=210218.978102 std=49801.0851762 shift=210218.978102 inv_scale=2.00798837307e-05)
+[2021-05-07 19:04:00,894] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled length (avg=1.5205018178e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,894] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (mode)
+[2021-05-07 19:04:00,894] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale mode (avg=0.57597876576 std=0.494275515253 shift=0.57597876576 inv_scale=2.02316313299)
+[2021-05-07 19:04:00,896] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled mode (avg=1.65391552109e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,896] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (time_signature)
+[2021-05-07 19:04:00,896] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale time_signature (avg=3.9701393497 std=0.27345956419 shift=3.9701393497 inv_scale=3.65684777917)
+[2021-05-07 19:04:00,897] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled time_signature (avg=-5.47228707825e-16 std=1.0) nulls=0
+[2021-05-07 19:04:00,897] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Top1000)
+[2021-05-07 19:04:00,897] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top1000 (avg=0.259124087591 std=0.438226552877 shift=0.259124087591 inv_scale=2.28192471094)
+[2021-05-07 19:04:00,898] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top1000 (avg=3.13396731702e-15 std=1.0) nulls=0
+[2021-05-07 19:04:00,898] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Wks)
+[2021-05-07 19:04:00,898] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Wks (avg=14.2627737226 std=23.5031254901 shift=14.2627737226 inv_scale=0.0425475326854)
+[2021-05-07 19:04:00,899] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Wks (avg=1.38921536665e-15 std=1.0) nulls=0
+[2021-05-07 19:04:00,899] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (valence)
+[2021-05-07 19:04:00,899] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale valence (avg=448.641340411 std=250.40655909 shift=448.641340411 inv_scale=0.00399350561596)
+[2021-05-07 19:04:00,912] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled valence (avg=-3.03524808325e-17 std=1.0) nulls=0
+[2021-05-07 19:04:00,912] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2021-05-07 19:04:00,912] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (instagram_username)
+[2021-05-07 19:04:00,916] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(3014, 103) nnz=3014
+[2021-05-07 19:04:00,916] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (album)
+[2021-05-07 19:04:00,918] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(3014, 103) nnz=3014
+[2021-05-07 19:04:00,919] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (song name)
+[2021-05-07 19:04:00,921] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(3014, 103) nnz=3014
+[2021-05-07 19:04:00,921] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (artist)
+[2021-05-07 19:04:00,935] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(3014, 103) nnz=3014
+[2021-05-07 19:04:00,935] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FastSparseDummifyProcessor (release_date)
+[2021-05-07 19:04:00,937] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(3014, 103) nnz=3014
+[2021-05-07 19:04:00,937] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (3014,)
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (3014,)
+[2021-05-07 19:04:00,938] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2021-05-07 19:04:00,939] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2021-05-07 19:04:00,939] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (3014, 540) target before = (3014,)
+[2021-05-07 19:04:00,940] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(3014, 31)
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (3014, 540) target after = (3014,)
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (3014, 31) 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(3014, 540) 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((3014,))
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2021-05-07 19:04:00,944] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 3014
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (3014, 31) 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((3014, 31))
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((3014, 540))
+[2021-05-07 19:04:00,944] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((3014,))
+[2021-05-07 19:04:00,958] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2021-05-07 19:04:00,958] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2021-05-07 19:04:00,958] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 741
+[2021-05-07 19:04:00,958] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2021-05-07 19:04:00,960] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:00,960] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {u'liveness': 350.81917717319175, u'energy': 580.1237558062376, u'instagram_followers': 258191863.9183809, u'release_month': 6.3234903782349035, u'T10': 82.39700374531836, u'Pk': 89.14134041141341, u'Top100': 0.025215660252156602, u'acousticness': 379.63669542136694, u'PkStreams': 8226404.849369609, u'danceability': 606.8304578633046, u'Top2500': 0.6619110816191108, u'tempo': 121810.91639017916, u'speechiness': 383.2528201725282, u'instrumentalness': 72.3979314873921, u'key': 5.234240212342402, u'Top1000': 0.2591240875912409, u'valence': 448.6413404114134, u'popularity': 47.08526874585269, u'Pos': 2439.78400796284, u'length': 210218.97810218978, u'mode': 0.5759787657597877, u'time_signature': 3.9701393497013937, u'loudness': -5946.709688122097, u'Wks': 14.262773722627736, u'Total': 93702308.8669542}
+[2021-05-07 19:04:00,963] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (popularity)
+[2021-05-07 19:04:00,963] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale popularity (avg=48.9217273954 std=30.3575864375 shift=47.0852687459 inv_scale=0.0325481599045)
+[2021-05-07 19:04:00,964] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled popularity (avg=0.0597733497838 std=0.988083577681) nulls=0
+[2021-05-07 19:04:00,964] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (energy)
+[2021-05-07 19:04:00,964] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale energy (avg=574.197031039 std=250.407746495 shift=580.123755806 inv_scale=0.00418953758579)
+[2021-05-07 19:04:00,965] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled energy (avg=-0.0248302361724 std=1.04909266571) nulls=0
+[2021-05-07 19:04:00,965] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (instagram_followers)
+[2021-05-07 19:04:00,965] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale instagram_followers (avg=252086499.258 std=478391403.781 shift=258191863.918 inv_scale=2.1322375427e-09)
+[2021-05-07 19:04:00,966] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled instagram_followers (avg=-0.0130180877412 std=1.02004411125) nulls=0
+[2021-05-07 19:04:00,966] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (release_month)
+[2021-05-07 19:04:00,966] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale release_month (avg=6.18758434548 std=3.44903546564 shift=6.32349037823 inv_scale=0.289173046788)
+[2021-05-07 19:04:00,967] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled release_month (avg=-0.0393003615688 std=0.997368094077) nulls=0
+[2021-05-07 19:04:00,967] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (T10)
+[2021-05-07 19:04:00,968] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale T10 (avg=83.1374243734 std=21.9514480844 shift=82.3970037453 inv_scale=0.0123917755339)
+[2021-05-07 19:04:00,981] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled T10 (avg=0.00917512622362 std=0.272017417306) nulls=0
+[2021-05-07 19:04:00,981] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Pk)
+[2021-05-07 19:04:00,981] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Pk (avg=83.4170040486 std=61.7310223136 shift=89.1413404114 inv_scale=0.0165263539284)
+[2021-05-07 19:04:00,982] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Pk (avg=-0.0946024087372 std=1.02018872311) nulls=0
+[2021-05-07 19:04:00,982] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Top100)
+[2021-05-07 19:04:00,982] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top100 (avg=0.0323886639676 std=0.177149623981 shift=0.0252156602522 inv_scale=6.37732423606)
+[2021-05-07 19:04:00,983] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top100 (avg=0.0457445704399 std=1.12974059043) nulls=0
+[2021-05-07 19:04:00,983] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (acousticness)
+[2021-05-07 19:04:00,983] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale acousticness (avg=369.113360324 std=262.254128037 shift=379.636695421 inv_scale=0.00373125753014)
+[2021-05-07 19:04:00,984] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled acousticness (avg=-0.0392652733247 std=0.97853769005) nulls=0
+[2021-05-07 19:04:00,984] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (PkStreams)
+[2021-05-07 19:04:00,984] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale PkStreams (avg=9082172.94737 std=8411492.14065 shift=8226404.84937 inv_scale=1.35220606905e-07)
+[2021-05-07 19:04:00,985] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled PkStreams (avg=0.115717481581 std=1.13740707224) nulls=0
+[2021-05-07 19:04:00,985] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (danceability)
+[2021-05-07 19:04:00,985] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale danceability (avg=609.333333333 std=226.544174639 shift=606.830457863 inv_scale=0.00452073372311)
+[2021-05-07 19:04:00,987] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled danceability (avg=0.0113148335421 std=1.02414589007) nulls=0
+[2021-05-07 19:04:00,987] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Top2500)
+[2021-05-07 19:04:00,987] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top2500 (avg=0.647773279352 std=0.47798680564 shift=0.661911081619 inv_scale=2.11355059116)
+[2021-05-07 19:04:00,988] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top2500 (avg=-0.0298809603389 std=1.01024929563) nulls=0
+[2021-05-07 19:04:00,988] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (tempo)
+[2021-05-07 19:04:00,988] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale tempo (avg=121839.605938 std=29820.4022358 shift=121810.91639 inv_scale=3.3940530116e-05)
+[2021-05-07 19:04:00,989] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled tempo (avg=0.00097373845917 std=1.01212026015) nulls=0
+[2021-05-07 19:04:00,989] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (speechiness)
+[2021-05-07 19:04:00,989] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale speechiness (avg=387.230769231 std=243.677554829 shift=383.252820173 inv_scale=0.00431082934483)
+[2021-05-07 19:04:00,989] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled speechiness (avg=0.0171482595325 std=1.05045235403) nulls=0
+[2021-05-07 19:04:00,989] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (instrumentalness)
+[2021-05-07 19:04:00,990] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale instrumentalness (avg=71.6414728637 std=175.214436311 shift=72.3979314874 inv_scale=0.00552461581415)
+[2021-05-07 19:04:00,990] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled instrumentalness (avg=-0.00417914327521 std=0.967992445709) nulls=0
+[2021-05-07 19:04:00,990] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (key)
+[2021-05-07 19:04:00,990] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale key (avg=5.34008097166 std=3.60972777201 shift=5.23424021234 inv_scale=0.272712074015)
+[2021-05-07 19:04:00,991] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled key (avg=0.0288640529888 std=0.984416347335) nulls=0
+[2021-05-07 19:04:00,991] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (loudness)
+[2021-05-07 19:04:00,991] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale loudness (avg=-6049.1268556 std=3375.0531988 shift=-5946.70968812 inv_scale=0.000328451237659)
+[2021-05-07 19:04:01,008] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled loudness (avg=-0.0336390454158 std=1.10854040031) nulls=0
+[2021-05-07 19:04:01,008] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Total)
+[2021-05-07 19:04:01,008] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Total (avg=109623446.279 std=228045101.325 shift=93702308.867 inv_scale=5.06578390349e-09)
+[2021-05-07 19:04:01,009] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Total (avg=0.080653041629 std=1.15522720356) nulls=0
+[2021-05-07 19:04:01,009] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (liveness)
+[2021-05-07 19:04:01,009] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale liveness (avg=339.411605938 std=299.682019454 shift=350.819177173 inv_scale=0.00329088032386)
+[2021-05-07 19:04:01,010] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled liveness (avg=-0.0375409517212 std=0.986217661237) nulls=0
+[2021-05-07 19:04:01,010] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Pos)
+[2021-05-07 19:04:01,010] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Pos (avg=2369.20512821 std=1412.67814893 shift=2439.78400796 inv_scale=0.000721534450488)
+[2021-05-07 19:04:01,011] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Pos (avg=-0.050925093222 std=1.0192959519) nulls=0
+[2021-05-07 19:04:01,011] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (length)
+[2021-05-07 19:04:01,011] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale length (avg=210605.77058 std=51610.9967252 shift=210218.978102 inv_scale=2.00798837307e-05)
+[2021-05-07 19:04:01,012] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled length (avg=0.00776674798829 std=1.03634281347) nulls=0
+[2021-05-07 19:04:01,012] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (mode)
+[2021-05-07 19:04:01,012] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale mode (avg=0.566801619433 std=0.495852146443 shift=0.57597876576 inv_scale=2.02316313299)
+[2021-05-07 19:04:01,013] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled mode (avg=-0.018566864114 std=1.0031897821) nulls=0
+[2021-05-07 19:04:01,013] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (time_signature)
+[2021-05-07 19:04:01,013] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale time_signature (avg=3.9689608637 std=0.308190227025 shift=3.9701393497 inv_scale=3.65684777917)
+[2021-05-07 19:04:01,014] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled time_signature (avg=-0.00430954392536 std=1.12700474726) nulls=0
+[2021-05-07 19:04:01,014] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Top1000)
+[2021-05-07 19:04:01,014] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Top1000 (avg=0.286099865047 std=0.452241905804 shift=0.259124087591 inv_scale=2.28192471094)
+[2021-05-07 19:04:01,014] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Top1000 (avg=0.0615566931736 std=1.03198198018) nulls=0
+[2021-05-07 19:04:01,015] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Wks)
+[2021-05-07 19:04:01,015] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Wks (avg=15.616734143 std=26.2531633228 shift=14.2627737226 inv_scale=0.0425475326854)
+[2021-05-07 19:04:01,015] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled Wks (avg=0.0576076752427 std=1.11700732457) nulls=0
+[2021-05-07 19:04:01,015] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (valence)
+[2021-05-07 19:04:01,016] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale valence (avg=438.599190283 std=243.092763852 shift=448.641340411 inv_scale=0.00399350561596)
+[2021-05-07 19:04:01,016] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescaled valence (avg=-0.0401033829325 std=0.970792317642) nulls=0
+[2021-05-07 19:04:01,016] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2021-05-07 19:04:01,016] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (instagram_username)
+[2021-05-07 19:04:01,030] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(741, 103) nnz=741
+[2021-05-07 19:04:01,030] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (album)
+[2021-05-07 19:04:01,032] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(741, 103) nnz=741
+[2021-05-07 19:04:01,032] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (song name)
+[2021-05-07 19:04:01,034] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(741, 103) nnz=741
+[2021-05-07 19:04:01,034] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (artist)
+[2021-05-07 19:04:01,036] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(741, 103) nnz=741
+[2021-05-07 19:04:01,036] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FastSparseDummifyProcessor (release_date)
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Dummifier: Append a sparse block shape=(741, 103) nnz=741
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2021-05-07 19:04:01,038] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (741,)
+[2021-05-07 19:04:01,039] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (741,)
+[2021-05-07 19:04:01,039] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2021-05-07 19:04:01,039] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because no target
+[2021-05-07 19:04:01,039] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (741, 540) target before = (741,)
+[2021-05-07 19:04:01,052] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(741, 31)
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (741, 540) target after = (741,)
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (741, 31) 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(741, 540) 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((741,))
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2021-05-07 19:04:01,056] [7085/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 741
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (741, 31) 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2021-05-07 19:04:01,056] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((741, 31))
+[2021-05-07 19:04:01,057] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((741, 540))
+[2021-05-07 19:04:01,057] [7085/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((741,))
+[2021-05-07 19:04:01,057] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2021-05-07 19:04:01,058] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2021-05-07 19:04:01,059] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(3014,540) tn=1627560 nnz=90420 fill_ratio=0.06
+[2021-05-07 19:04:01,059] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2021-05-07 19:04:01,082] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {u'computeLearningCurves': False, u'algorithm': u'RANDOM_FOREST_CLASSIFICATION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'nIterRandom': 5, u'bayesianOptimizer': u'SCIKIT_OPTIMIZE', u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'seed': 0, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 1, u'metrics': {u'customEvaluationMetricGIB': True, u'customEvaluationMetricNeedsProba': False, u'thresholdOptimizationMetric': u'F1', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'evaluationMetric': u'ROC_AUC'}, u'forcedClassifierThreshold': 0.0, u'rf_classifier_grid': {u'n_jobs': 4, u'max_tree_depth': {u'values': [8], u'gridMode': u'EXPLICIT', u'randomMode': u'RANGE', u'limit': {u'min': 1}, u'range': {u'scaling': u'LINEAR', u'max': 10, u'nbValues': 3, u'min': 5}}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'values': [3], u'gridMode': u'EXPLICIT', u'randomMode': u'RANGE', u'limit': {u'min': 1}, u'range': {u'scaling': u'LINEAR', u'max': 20, u'nbValues': 3, u'min': 1}}, u'n_estimators': {u'values': [100], u'gridMode': u'EXPLICIT', u'randomMode': u'RANGE', u'limit': {u'min': 1}, u'range': {u'scaling': u'LINEAR', u'max': 200, u'nbValues': 3, u'min': 80}}, u'max_feature_prop': {u'values': [0.3], u'gridMode': u'EXPLICIT', u'randomMode': u'RANGE', u'limit': {u'max': 1.0, u'min': 1e-23}, u'range': {u'scaling': u'LINEAR', u'max': 0.7, u'nbValues': 3, u'min': 0.1}}, u'max_features': {u'values': [5], u'gridMode': u'EXPLICIT', u'randomMode': u'RANGE', u'limit': {u'min': 1}, u'range': {u'scaling': u'LINEAR', u'max': 20, u'nbValues': 3, u'min': 1}}}, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False, u'skipExpensiveReports': False} for algorithm RANDOM_FOREST_CLASSIFICATION
+[2021-05-07 19:04:01,083] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Using stratified K-Fold CV with k=3
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.crossval.search_runner] Got single-point space, not performing hyperparameter search
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.crossval.strategies.grid_search_strategy] Running GridSearchStrategy for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x7fc6bc91bd50>
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: RandomForestClassifier(bootstrap=True,
+            class_weight={0: 1.0545836249125262, 1: 0.950788643533123},
+            criterion='gini', max_depth=8, max_features=u'auto',
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=3,
+            min_samples_split=9, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+            verbose=0, warm_start=False)
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <type 'numpy.ndarray'>
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (3014, 540)
+[2021-05-07 19:04:01,085] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (3014,)
+[2021-05-07 19:04:02,352] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Obtained RF CLF params: {'warm_start': False, 'oob_score': False, 'n_jobs': 4, 'min_impurity_decrease': 0.0, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 3, 'n_estimators': 100, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 8, 'class_weight': {0: 1.0545836249125262, 1: 0.950788643533123}} 
+[2021-05-07 19:04:02,352] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Output params are {'resolved': {'rf': {'max_tree_depth': 8, 'selection_mode': u'auto', 'min_samples_leaf': 3, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_CLASSIFICATION'}, 'other': {'rf_min_samples_split': 9}}
+[2021-05-07 19:04:02,352] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2021-05-07 19:04:02,352] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2021-05-07 19:04:02,353] [7085/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] PICKLING RandomForestClassifier(bootstrap=True,
+            class_weight={0: 1.0545836249125262, 1: 0.950788643533123},
+            criterion='gini', max_depth=8, max_features=u'auto',
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=3,
+            min_samples_split=9, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+            verbose=0, warm_start=False)
+[2021-05-07 19:04:02,440] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2021-05-07 19:04:02,440] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2021-05-07 19:04:02,441] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Intrinsic scoring
+[2021-05-07 19:04:03,242] [7085/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2021-05-07 19:04:03,243] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Extracting rescalers
+[2021-05-07 19:04:03,243] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Creating random forest trees summary
+[2021-05-07 19:04:04,149] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] prepare multiframe shape=(741,540) tn=400140 nnz=22230 fill_ratio=0.06
+[2021-05-07 19:04:04,149] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] too small, using array
+[2021-05-07 19:04:05,043] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Probas raw shape 741/2 target_map=2
+/home/dataiku/dataiku-dss-8.0.4/python.packages/sklearn/metrics/classification.py:543: RuntimeWarning: invalid value encountered in double_scalars
+  mcc = cov_ytyp / np.sqrt(cov_ytyt * cov_ypyp)
+/home/dataiku/dataiku-dss-8.0.4/python.packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+  'precision', 'predicted', average, warn_for)
+[2021-05-07 19:04:06,274] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Starting threshold optim
+[2021-05-07 19:04:06,275] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.000000 score 0.695423 (pred_true=741)
+[2021-05-07 19:04:06,276] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.025000 score 0.695423 (pred_true=741)
+[2021-05-07 19:04:06,278] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.050000 score 0.695423 (pred_true=741)
+[2021-05-07 19:04:06,280] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.075000 score 0.695423 (pred_true=741)
+[2021-05-07 19:04:06,282] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.100000 score 0.697880 (pred_true=737)
+[2021-05-07 19:04:06,328] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.125000 score 0.712996 (pred_true=713)
+[2021-05-07 19:04:06,329] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.150000 score 0.819502 (pred_true=569)
+[2021-05-07 19:04:06,330] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.175000 score 0.873894 (pred_true=509)
+[2021-05-07 19:04:06,332] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.200000 score 0.886644 (pred_true=496)
+[2021-05-07 19:04:06,334] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.225000 score 0.891648 (pred_true=491)
+[2021-05-07 19:04:06,335] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.250000 score 0.898749 (pred_true=484)
+[2021-05-07 19:04:06,336] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.275000 score 0.915215 (pred_true=466)
+[2021-05-07 19:04:06,336] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.300000 score 0.938922 (pred_true=440)
+[2021-05-07 19:04:06,337] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.325000 score 0.943765 (pred_true=423)
+[2021-05-07 19:04:06,338] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.350000 score 0.955335 (pred_true=411)
+[2021-05-07 19:04:06,339] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.375000 score 0.956413 (pred_true=408)
+[2021-05-07 19:04:06,385] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.400000 score 0.964736 (pred_true=399)
+[2021-05-07 19:04:06,387] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.425000 score 0.973180 (pred_true=388)
+[2021-05-07 19:04:06,388] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.450000 score 0.974293 (pred_true=383)
+[2021-05-07 19:04:06,389] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.475000 score 0.970169 (pred_true=376)
+[2021-05-07 19:04:06,390] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.500000 score 0.960733 (pred_true=369)
+[2021-05-07 19:04:06,391] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.525000 score 0.945551 (pred_true=358)
+[2021-05-07 19:04:06,391] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.550000 score 0.945406 (pred_true=356)
+[2021-05-07 19:04:06,392] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.575000 score 0.943850 (pred_true=353)
+[2021-05-07 19:04:06,393] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.600000 score 0.932432 (pred_true=345)
+[2021-05-07 19:04:06,394] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.625000 score 0.925170 (pred_true=340)
+[2021-05-07 19:04:06,395] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.650000 score 0.925170 (pred_true=340)
+[2021-05-07 19:04:06,441] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.675000 score 0.920765 (pred_true=337)
+[2021-05-07 19:04:06,442] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.700000 score 0.911846 (pred_true=331)
+[2021-05-07 19:04:06,443] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.725000 score 0.902778 (pred_true=325)
+[2021-05-07 19:04:06,443] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.750000 score 0.895105 (pred_true=320)
+[2021-05-07 19:04:06,444] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.775000 score 0.884181 (pred_true=313)
+[2021-05-07 19:04:06,445] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.800000 score 0.848397 (pred_true=291)
+[2021-05-07 19:04:06,446] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.825000 score 0.755906 (pred_true=240)
+[2021-05-07 19:04:06,446] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.850000 score 0.661017 (pred_true=195)
+[2021-05-07 19:04:06,447] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.875000 score 0.591800 (pred_true=166)
+[2021-05-07 19:04:06,448] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.900000 score 0.495238 (pred_true=130)
+[2021-05-07 19:04:06,449] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.925000 score 0.188073 (pred_true=41)
+[2021-05-07 19:04:06,450] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.950000 score 0.025000 (pred_true=5)
+[2021-05-07 19:04:06,451] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] AT CUT 0.975000 score 0.000000 (pred_true=0)
+[2021-05-07 19:04:06,451] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Selected threshold 0.45 
+[2021-05-07 19:04:06,501] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] preds 0      1
+1      1
+2      1
+3      1
+4      1
+5      1
+6      1
+7      1
+8      0
+9      0
+10     1
+11     1
+12     1
+13     1
+14     1
+15     1
+16     1
+17     1
+18     1
+19     0
+20     0
+21     0
+22     1
+23     1
+24     1
+25     1
+26     1
+27     1
+28     1
+29     1
+      ..
+711    0
+712    0
+713    0
+714    0
+715    0
+716    0
+717    0
+718    0
+719    0
+720    0
+721    0
+722    0
+723    0
+724    0
+725    0
+726    0
+727    0
+728    0
+729    0
+730    0
+731    0
+732    0
+733    0
+734    0
+735    0
+736    0
+737    0
+738    0
+739    0
+740    0
+Name: predicted, Length: 741, dtype: int64
+[2021-05-07 19:04:06,501] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MAPPED SHAPE 741
+[2021-05-07 19:04:06,501] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] k=1 v=1
+[2021-05-07 19:04:06,501] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Mask data [ True  True  True  True  True  True  True  True False False  True  True
+  True  True  True  True  True  True  True False False False  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+ False  True  True False False False False False False False  True  True
+  True  True False False  True  True  True  True False False False  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True False False False False False False False False False
+ False False False False False False False False False False False  True
+ False False False False False  True  True  True  True  True  True  True
+  True  True  True  True  True  True False False False False  True  True
+  True False  True  True  True False  True  True  True  True False False
+ False False  True False False  True  True  True False False  True False
+ False  True  True False False  True  True False False  True  True  True
+  True  True False  True  True  True  True  True False False False False
+ False  True  True  True False False  True False False False False  True
+ False False  True False  True False  True  True False  True  True  True
+  True  True  True  True False False False  True  True  True False  True
+  True  True False False False False  True  True  True  True  True False
+ False False False False  True  True  True False False  True  True False
+  True  True  True False  True False False False False False False False
+ False False False False  True  True  True False False  True False False
+  True  True  True False  True False  True False False  True  True  True
+ False False False False False  True False False False False  True  True
+  True  True  True  True False False False False  True  True  True  True
+  True False  True  True False False  True  True  True  True  True  True
+ False  True False False False False False False False False False False
+ False  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True False  True  True False  True False  True False
+  True False False  True  True  True False  True  True False False False
+ False False False  True  True False False False False False False False
+ False  True False False  True  True  True  True  True False  True False
+ False False False False False  True False False  True  True False  True
+  True  True  True  True False  True  True False  True False  True False
+ False  True  True  True False False  True False False False False False
+  True  True  True  True  True  True  True False False False False False
+ False False False  True  True False False False  True  True  True False
+  True  True  True False False False  True  True  True False  True  True
+ False  True False  True  True  True  True False  True  True False  True
+  True False  True  True  True  True  True False False False  True  True
+ False False  True  True  True False  True False  True  True False False
+  True  True  True  True False  True  True  True  True False  True  True
+  True  True  True  True  True  True  True  True False False False False
+ False  True  True  True False  True  True  True  True  True  True  True
+  True  True False  True False False False False False  True False False
+  True  True False False  True  True  True  True  True  True  True  True
+ False  True False False False False False  True False False  True  True
+  True False False  True  True  True  True  True  True  True  True  True
+ False False  True False False False False  True  True  True  True False
+ False  True  True  True False  True False  True False  True  True  True
+ False False  True False False  True  True  True  True False  True  True
+ False  True  True  True  True False  True  True  True  True  True  True
+  True  True  True  True  True  True False False  True  True  True False
+  True  True False  True  True  True  True  True  True  True  True False
+  True False  True  True False  True False  True  True  True False False
+ False False False  True False False  True False  True  True  True  True
+  True  True False  True False False False False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False]
+[2021-05-07 19:04:06,502] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] mapped pred <type 'numpy.ndarray'>
+[2021-05-07 19:04:06,502] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] k=0 v=0
+[2021-05-07 19:04:06,503] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Mask data [False False False False False False False False  True  True False False
+ False False False False False False False  True  True  True False False
+ False False False False False False False False False False False False
+  True False False  True  True  True  True  True  True  True False False
+ False False  True  True False False False False  True  True  True False
+ False False False False False False False False False False False False
+ False False False  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True False
+  True  True  True  True  True False False False False False False False
+ False False False False False False  True  True  True  True False False
+ False  True False False False  True False False False False  True  True
+  True  True False  True  True False False False  True  True False  True
+  True False False  True  True False False  True  True False False False
+ False False  True False False False False False  True  True  True  True
+  True False False False  True  True False  True  True  True  True False
+  True  True False  True False  True False False  True False False False
+ False False False False  True  True  True False False False  True False
+ False False  True  True  True  True False False False False False  True
+  True  True  True  True False False False  True  True False False  True
+ False False False  True False  True  True  True  True  True  True  True
+  True  True  True  True False False False  True  True False  True  True
+ False False False  True False  True False  True  True False False False
+  True  True  True  True  True False  True  True  True  True False False
+ False False False False  True  True  True  True False False False False
+ False  True False False  True  True False False False False False False
+  True False  True  True  True  True  True  True  True  True  True  True
+  True False False False False False False False False False False False
+ False False False False  True False False  True False  True False  True
+ False  True  True False False False  True False False  True  True  True
+  True  True  True False False  True  True  True  True  True  True  True
+  True False  True  True False False False False False  True False  True
+  True  True  True  True  True False  True  True False False  True False
+ False False False False  True False False  True False  True False  True
+  True False False False  True  True False  True  True  True  True  True
+ False False False False False False False  True  True  True  True  True
+  True  True  True False False  True  True  True False False False  True
+ False False False  True  True  True False False False  True False False
+  True False  True False False False False  True False False  True False
+ False  True False False False False False  True  True  True False False
+  True  True False False False  True False  True False False  True  True
+ False False False False  True False False False False  True False False
+ False False False False False False False False  True  True  True  True
+  True False False False  True False False False False False False False
+ False False  True False  True  True  True  True  True False  True  True
+ False False  True  True False False False False False False False False
+  True False  True  True  True  True  True False  True  True False False
+ False  True  True False False False False False False False False False
+  True  True False  True  True  True  True False False False False  True
+  True False False False  True False  True False  True False False False
+  True  True False  True  True False False False False  True False False
+  True False False False False  True False False False False False False
+ False False False False False False  True  True False False False  True
+ False False  True False False False False False False False False  True
+ False  True False False  True False  True False False False  True  True
+  True  True  True False  True  True False  True False False False False
+ False False  True False  True  True  True  True  True  True False  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True]
+[2021-05-07 19:04:06,504] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] mapped pred <type 'numpy.ndarray'>
+[2021-05-07 19:04:06,505] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MAPPED PREDS [u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'1'
+ u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'0'
+ u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'0'
+ u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'1' u'1' u'1'
+ u'0' u'0' u'1' u'0' u'0' u'1' u'1' u'0' u'0' u'1' u'1' u'0' u'0' u'1'
+ u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0'
+ u'0' u'1' u'1' u'1' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'1' u'0' u'0'
+ u'1' u'0' u'1' u'0' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'0' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'0' u'0' u'0' u'0'
+ u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'0'
+ u'0' u'1' u'1' u'0' u'1' u'1' u'1' u'0' u'1' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'0' u'0' u'1' u'0' u'0'
+ u'1' u'1' u'1' u'0' u'1' u'0' u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'0'
+ u'0' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'0'
+ u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'1' u'0' u'1' u'0'
+ u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'0'
+ u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'1'
+ u'0' u'0' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'0'
+ u'1' u'0' u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'0' u'1' u'0' u'0' u'0'
+ u'0' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'1' u'1' u'0' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1'
+ u'1' u'0' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'1' u'0' u'1'
+ u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'1' u'1' u'0' u'1' u'1' u'1' u'1'
+ u'1' u'0' u'0' u'0' u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'0'
+ u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'0'
+ u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'0' u'0' u'0'
+ u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'1' u'1' u'0' u'0'
+ u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'0' u'0' u'0' u'0'
+ u'0' u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'0' u'0' u'1' u'0' u'0' u'0' u'0' u'1' u'1' u'1'
+ u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'0' u'1' u'0' u'1' u'1' u'1'
+ u'0' u'0' u'1' u'0' u'0' u'1' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'1'
+ u'1' u'1' u'1' u'0' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1' u'1'
+ u'1' u'1' u'0' u'0' u'1' u'1' u'1' u'0' u'1' u'1' u'0' u'1' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'1' u'0' u'1' u'0' u'1' u'1' u'0' u'1' u'0' u'1'
+ u'1' u'1' u'0' u'0' u'0' u'0' u'0' u'1' u'0' u'0' u'1' u'0' u'1' u'1'
+ u'1' u'1' u'1' u'1' u'0' u'1' u'0' u'0' u'0' u'0' u'0' u'0' u'1' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0'
+ u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0' u'0']
+[2021-05-07 19:04:06,563] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Total true rate = 395 / 741
+[2021-05-07 19:04:06,563] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Computing lift on first 296 rows
+[2021-05-07 19:04:06,563] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] True rate on considered : 296 / 296
+[2021-05-07 19:04:06,563] [7085/MainThread] [INFO] [dataiku.doctor.prediction.common] Lift = 1.875949
+[2021-05-07 19:04:07,146] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for 0 (id 0)
+[2021-05-07 19:04:07,146] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (741,)
+[2021-05-07 19:04:07,146] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((741,))
+[2021-05-07 19:04:07,146] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (741,)
+[2021-05-07 19:04:07,146] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2021-05-07 19:04:07,150] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.73360301 0.81584453 0.66539781 0.7171814  0.73379917 0.86675926
+ 0.71083787 0.82625707 0.86450693 0.86061664 0.86287444 0.8628593
+ 0.85231231 0.85813095 0.70232922 0.74881471 0.77222272 0.67883232
+ 0.71154493 0.69699248 0.85609581 0.7946747  0.796926   0.83087618
+ 0.83632818 0.83810579 0.83908489 0.87408565 0.85884568 0.85469423
+ 0.87931393 0.84544485 0.86666023 0.87099711 0.87056782 0.86054137
+ 0.85420262 0.86030466 0.85985687 0.86137686 0.66969435 0.73389057
+ 0.84459191 0.84748598 0.71318851 0.8267838  0.85444218 0.86304334
+ 0.7698653  0.86437934 0.70605882 0.82467874 0.85026791 0.84021744
+ 0.81314224 0.80469969 0.71140623 0.84042689 0.86485836 0.70278104
+ 0.85591052 0.86546915 0.87479718 0.84555118 0.83830039 0.83841481
+ 0.8611454  0.86870366 0.87797536 0.65167611 0.6634112  0.85434092
+ 0.86947309 0.57772086 0.70212073 0.87401158 0.87657417 0.85352178
+ 0.73941644 0.73773931 0.88151704 0.88233363 0.72382021 0.83516507
+ 0.85948609 0.79504654 0.85567234 0.83098869 0.84617614 0.72720411
+ 0.67229368 0.70790608 0.83829305 0.83072447 0.84306481 0.84895627
+ 0.8672758  0.84476981 0.84584867 0.86061664 0.86828772 0.71258084
+ 0.90684936 0.85158197 0.84963094 0.85676638 0.85517922 0.8183379
+ 0.87490688 0.7692112  0.85012563 0.86020498 0.85725934 0.68472747
+ 0.71461508 0.86150554 0.89064866 0.61229545 0.59973775 0.70279364
+ 0.86340508 0.85485292 0.85416324 0.85874567 0.65427582 0.66801367
+ 0.82752856 0.86579381 0.82607991 0.86590229 0.86287157 0.84064146
+ 0.85881856 0.88365029 0.87803129 0.4462202  0.47487693 0.8454944
+ 0.61657519 0.87191809 0.56307628 0.86967241 0.84262619 0.8434567
+ 0.84995737 0.85400964 0.85477065 0.85680355 0.86957061 0.70055242
+ 0.81717007 0.8532012  0.84593884 0.81344653 0.87224291 0.86505264
+ 0.86339952 0.8648717  0.84715175 0.85590191 0.8723755  0.85818865
+ 0.83503927 0.84418399 0.8590543  0.86446333 0.86483676 0.84723833
+ 0.86189169 0.62264074 0.88075647 0.83587212 0.74181383 0.61410466
+ 0.72453817 0.71550122 0.87733708 0.8773008  0.86534993 0.62018302
+ 0.78451772 0.62765307 0.69095507 0.70723602 0.69604372 0.86389234
+ 0.8294321  0.82149534 0.85581982 0.86111334 0.86392476 0.85124604
+ 0.74093479 0.60304328 0.8652763  0.86343683 0.83785579 0.85643169
+ 0.88229713 0.71393898 0.68322451 0.85000295 0.86421118 0.87046183
+ 0.86598534 0.59498842 0.58867257 0.85647972 0.85981619 0.87672953
+ 0.84614244 0.77141239 0.59126896 0.74046998 0.57684194 0.86496812
+ 0.87149678 0.68994674 0.54398418 0.80438942 0.60566004 0.68356333
+ 0.8264315  0.87244141 0.87220247 0.67014431 0.86289175 0.6656173
+ 0.57407229 0.6910161  0.73459066 0.87991877 0.88757654 0.8768286
+ 0.87555792 0.5699161  0.82937666 0.80759174 0.83019127 0.79222765
+ 0.87784494 0.87366934 0.71958719 0.86646139 0.86622867 0.76239783
+ 0.75938807 0.68016897 0.84676159 0.86878092 0.88587645 0.88308233
+ 0.85916202 0.59487172 0.84165634 0.86561614 0.87166942 0.73982721
+ 0.84772753 0.86372714 0.86607727 0.90477187 0.9127005  0.90061073
+ 0.8571874  0.67333238 0.86200079 0.86693647 0.84636499 0.64317765
+ 0.82284023 0.86569549 0.87034209 0.86731169 0.59563769 0.54145768
+ 0.86636249 0.86397396 0.62303474 0.67453152 0.88949247 0.83565034
+ 0.87419385 0.72245576 0.74642761 0.86211943 0.86126786 0.69581021
+ 0.72912612 0.74207274 0.82984052 0.85306625 0.72382452 0.72595564
+ 0.73020152 0.57557861 0.87073165 0.87468522 0.86799116 0.87489515
+ 0.85370135 0.85792393 0.70257261 0.85710979 0.71461935 0.75191916
+ 0.86619484 0.84658808 0.85688525 0.85827603 0.83229099 0.84945902
+ 0.84617453 0.84959299 0.87225643 0.86554314 0.83756062 0.83736324
+ 0.86779463 0.86946475 0.85214604 0.87708658 0.86615568 0.85274741
+ 0.85808045 0.86665425 0.85526665 0.80406218 0.86378755 0.86424116
+ 0.85622159 0.83550009 0.85647349 0.85906163 0.86351045 0.83852877
+ 0.85053969 0.85882439 0.82499779 0.84579436 0.87513267 0.85853126
+ 0.86392449 0.88295573 0.85956168 0.84685842]
+[2021-05-07 19:04:07,150] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (346,)
+[2021-05-07 19:04:07,203] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for 1 (id 1)
+[2021-05-07 19:04:07,203] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (741,)
+[2021-05-07 19:04:07,203] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <type 'numpy.ndarray'> ((741,))
+[2021-05-07 19:04:07,203] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (741,)
+[2021-05-07 19:04:07,203] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <type 'numpy.ndarray'> 
+[2021-05-07 19:04:07,206] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba [0.94473556 0.95121622 0.95811861 0.94162293 0.58158166 0.91250179
+ 0.84925541 0.83881738 0.91044395 0.52986542 0.50388145 0.84734575
+ 0.80629709 0.84821152 0.80149793 0.84278023 0.80238774 0.87481192
+ 0.86679592 0.94795714 0.94121243 0.94533394 0.89488626 0.87812575
+ 0.81537988 0.94749535 0.87991091 0.90813399 0.47929338 0.88587098
+ 0.90383815 0.60831993 0.86194954 0.29386906 0.92040002 0.90750591
+ 0.91133683 0.81151622 0.93538849 0.87323887 0.80458664 0.70920221
+ 0.94223021 0.91226779 0.92248787 0.90122954 0.86612501 0.49149941
+ 0.90963119 0.84122558 0.83952125 0.59934163 0.81507486 0.79686784
+ 0.75276933 0.74957551 0.67609802 0.69724063 0.39276372 0.35735227
+ 0.87767001 0.69153784 0.92259856 0.91806567 0.60884414 0.90563037
+ 0.89958312 0.91953435 0.92126386 0.91949031 0.87528156 0.87172547
+ 0.8606319  0.77994202 0.92939429 0.95190188 0.70654233 0.83586821
+ 0.75846869 0.45309005 0.94465378 0.92630841 0.89372851 0.9048268
+ 0.61514029 0.89094906 0.82414575 0.74495505 0.41754955 0.27024458
+ 0.66483911 0.94029283 0.94858693 0.9009901  0.9074508  0.94485231
+ 0.87262579 0.9313698  0.57445311 0.89538944 0.68800415 0.89989749
+ 0.66573498 0.92233944 0.86386803 0.40208084 0.95184811 0.81914354
+ 0.69109428 0.93505235 0.51642515 0.95062857 0.5794303  0.89875903
+ 0.91314663 0.91314291 0.90122238 0.45739996 0.90136682 0.88462824
+ 0.85307042 0.79816804 0.89634423 0.9068412  0.51777328 0.9213495
+ 0.90933598 0.82238733 0.91985907 0.57824493 0.50802741 0.52303711
+ 0.91837773 0.92564705 0.90984536 0.88823623 0.91958993 0.81530119
+ 0.92397727 0.80501158 0.83125955 0.30687433 0.71663691 0.87392716
+ 0.92853624 0.92007776 0.92288137 0.92761681 0.91124063 0.81760045
+ 0.45606013 0.83526565 0.91281363 0.93765382 0.84612748 0.32157083
+ 0.58691808 0.93085059 0.90857601 0.89900493 0.90422003 0.87413249
+ 0.92560716 0.90886008 0.93271184 0.90672776 0.88360493 0.70514059
+ 0.83889154 0.78270308 0.61479878 0.91766813 0.76688594 0.77606487
+ 0.80315126 0.85906543 0.30080008 0.76525469 0.90426081 0.92257194
+ 0.59898051 0.90852222 0.91617495 0.84993106 0.82285586 0.92857113
+ 0.89305298 0.91546953 0.79347645 0.91736573 0.90870732 0.92194161
+ 0.82453854 0.61355655 0.88914333 0.90953002 0.92467915 0.93906172
+ 0.90655725 0.91389356 0.89340194 0.83524602 0.83897291 0.91730636
+ 0.86705052 0.79375795 0.92314805 0.93307486 0.83400256 0.91200753
+ 0.92900851 0.88769239 0.9063021  0.90113439 0.88076987 0.78117814
+ 0.79099587 0.80859297 0.87119597 0.85713761 0.91504908 0.44261923
+ 0.84934264 0.92957198 0.86550246 0.92689954 0.83740188 0.49598982
+ 0.92923869 0.91724436 0.91135277 0.91728298 0.91784714 0.76272052
+ 0.82390384 0.81118798 0.79697915 0.83566106 0.79754163 0.89093177
+ 0.8117502  0.89026782 0.90915493 0.92879185 0.90270748 0.48571392
+ 0.90780136 0.90410347 0.81392246 0.79089905 0.50260231 0.83481997
+ 0.90502991 0.89636444 0.81275844 0.86378228 0.91842496 0.89183917
+ 0.91906866 0.8804035  0.86785881 0.92166821 0.9199075  0.91604426
+ 0.89090588 0.82890728 0.84343782 0.9113207  0.9059935  0.90512323
+ 0.80185878 0.92680061 0.58362056 0.91219356 0.90828625 0.49790659
+ 0.93838618 0.31468252 0.92486781 0.83119919 0.85809617 0.81822494
+ 0.90642699 0.89530039 0.88881364 0.48950303 0.82319996 0.90643168
+ 0.89647993 0.93174586 0.89791164 0.92840721 0.8393995  0.82157505
+ 0.8191594  0.9324077  0.91149719 0.9098016  0.51362809 0.84551907
+ 0.78387181 0.81402983 0.82602037 0.90494695 0.91856791 0.59722166
+ 0.89673061 0.55395758 0.90596367 0.82206017 0.87396674 0.47249635
+ 0.50850479 0.90427739 0.87421575 0.86301994 0.90557195 0.88744061
+ 0.81595344 0.89299799 0.50571375 0.89309417 0.81204514 0.82288117
+ 0.78180409 0.84931982 0.85881217 0.86117429 0.82959533 0.82982347
+ 0.43944605 0.81169416 0.83610883 0.45340994 0.83913406 0.84385679
+ 0.84759514 0.8336503  0.84419589 0.30309862 0.6593477  0.80721885
+ 0.82752513 0.83207072 0.86564926 0.85028958 0.81322863 0.32804357
+ 0.81451304 0.83632138 0.80605401 0.85651969 0.82463779 0.49244513
+ 0.82618848 0.81165417 0.79696339 0.72984697 0.82377892 0.78262421
+ 0.86075396 0.81978917 0.50103101 0.82135383 0.83562374 0.79365304
+ 0.83809116 0.81014005 0.81788323 0.30853507 0.50921648 0.81338483
+ 0.78058386 0.82592461 0.78425838 0.82677074 0.81394915 0.82726538
+ 0.80494244 0.79090667 0.71972143 0.8112335  0.28625671 0.80221587
+ 0.7371057  0.80168943 0.70495969 0.74657804 0.79398289 0.83430621
+ 0.75857555 0.77652548 0.77337249 0.68147692 0.80508444]
+[2021-05-07 19:04:07,206] [7085/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (395,)
+[2021-05-07 19:04:07,435] [7085/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [root] Reading with dtypes: None
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pos: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Wks: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for T10: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Pk: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for PkStreams: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Total: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for song name: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for album: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for artist: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_date: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for length: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for popularity: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for danceability: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for acousticness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for energy: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,436] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instrumentalness: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for liveness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for loudness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for speechiness: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for tempo: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for time_signature: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for mode: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for valence: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for key: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for release_month: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top100: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top1000: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2000: <type 'numpy.object_'> (schema_type=bigint feature_type=NUMERIC feature_role=TARGET)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Top2500: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_username: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for instagram_followers: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2021-05-07 19:04:07,437] [7085/MainThread] [INFO] [root] Reading with FIXED dtypes: {u'popularity': <type 'numpy.float64'>, u'energy': <type 'numpy.float64'>, u'instagram_followers': <type 'numpy.float64'>, u'speechiness': <type 'numpy.float64'>, u'T10': <type 'numpy.float64'>, u'Pk': <type 'numpy.float64'>, u'Top100': <type 'numpy.float64'>, u'instagram_username': 'str', u'album': 'str', u'acousticness': <type 'numpy.float64'>, u'PkStreams': <type 'numpy.float64'>, u'danceability': <type 'numpy.float64'>, u'Top2500': <type 'numpy.float64'>, u'Top2000': <type 'numpy.object_'>, u'song name': 'str', u'tempo': <type 'numpy.float64'>, u'release_month': <type 'numpy.float64'>, u'instrumentalness': <type 'numpy.float64'>, u'key': <type 'numpy.float64'>, u'Top1000': <type 'numpy.float64'>, u'valence': <type 'numpy.float64'>, u'artist': 'str', u'release_date': 'str', u'liveness': <type 'numpy.float64'>, u'Pos': <type 'numpy.float64'>, u'length': <type 'numpy.float64'>, u'mode': <type 'numpy.float64'>, u'time_signature': <type 'numpy.float64'>, u'loudness': <type 'numpy.float64'>, u'Wks': <type 'numpy.float64'>, u'Total': <type 'numpy.float64'>}
+[2021-05-07 19:04:07,489] [7085/MainThread] [INFO] [root] Loaded table
+[2021-05-07 19:04:07,490] [7085/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Building background rows
+[2021-05-07 19:04:07,492] [7085/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Background estimated bias <= 0.0733450993168
+[2021-05-07 19:04:07,495] [7085/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Built background rows with shape=(741, 31)
+[2021-05-07 19:04:07,495] [7085/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Saving background rows with shape=(741, 31)
+[2021-05-07 19:04:07,600] [7085/MainThread] [INFO] [dataiku.doctor.utils]  Coercion done
+[2021-05-07 19:04:07,601] [7085/MainThread] [INFO] [dataiku.doctor.prediction.histogram_handler] Computing histograms
+[2021-05-07 19:04:08,735] [7085/MainThread] [INFO] [dataiku.doctor.prediction.histogram_handler] Saving histograms
+[2021-05-07 19:04:08,743] [7085/MainThread] [INFO] [dataiku.doctor.prediction.column_importance_handler] Computing column importance
+[2021-05-07 19:04:08,743] [7085/MainThread] [INFO] [dataiku.doctor.prediction.column_importance_handler] Reusing the model feature importance
+[2021-05-07 19:04:08,811] [7085/MainThread] [INFO] [dataiku.doctor.prediction.column_importance_handler] Saving column importance
+[2021/05/07-19:04:08.821] [MRT-2270] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2021/05/07-19:04:08.822] [MRT-2270] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2021/05/07-19:04:08.822] [MRT-2270] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"8.0.4","trainedWithDSSConfVersion":"8020","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /home/dataiku/dss/analysis-data/SPOTIFY_FINAL/aijRuzcx/BaRQJvc0/sessions/s2/pp1/m1
+[2021/05/07-19:04:08.881] [KNL-python-single-command-kernel-out-2280] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2021/05/07-19:04:08.882] [KNL-python-single-command-kernel-monitor-2276] [INFO] [dku.kernels]  - Process done with code 143
+[2021/05/07-19:04:08.881] [KNL-python-single-command-kernel-err-2281] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2021/05/07-19:04:08.985] [KNL-python-single-command-kernel-monitor-2276] [WARN] [dku.resource]  - stat file for pid 7085 does not exist. Process died?
+[2021/05/07-19:04:08.985] [KNL-python-single-command-kernel-monitor-2276] [INFO] [dku.resourceusage]  - Reporting completion of CRU:{"context":{"type":"ANALYSIS_ML_TRAIN","authIdentifier":"admin","projectKey":"SPOTIFY_FINAL","analysisId":"aijRuzcx","mlTaskId":"BaRQJvc0","sessionId":"s2"},"type":"LOCAL_PROCESS","id":"CbJiwwMpaTZjuc0Q","startTime":1620414239012,"localProcess":{"pid":7085,"commandName":"/home/dataiku/dss/bin/python","cpuUserTimeMS":1420,"cpuSystemTimeMS":100,"cpuChildrenUserTimeMS":0,"cpuChildrenSystemTimeMS":0,"cpuTotalMS":1520,"cpuCurrent":0.28554313099041534,"vmSizeMB":1325,"vmRSSMB":127,"vmHWMMB":134,"vmRSSAnonMB":107,"vmDataMB":656,"vmSizePeakMB":1416,"vmRSSPeakMB":127,"vmRSSTotalMBS":635,"majorFaults":0,"childrenMajorFaults":0}}
+[2021/05/07-19:04:08.986] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.ml.python] T-BaRQJvc0 - Processing thread joined ...
+[2021/05/07-19:04:08.987] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.ml.python] T-BaRQJvc0 - Joining processing thread ...
+[2021/05/07-19:05:05.998] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.ml.python] T-BaRQJvc0 - Processing thread joined ...
+[2021/05/07-19:05:05.998] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction] T-BaRQJvc0 - Train done
+[2021/05/07-19:05:05.999] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction] T-BaRQJvc0 - Train done
+[2021/05/07-19:05:06.002] [FT-TrainWorkThread-IMk4nVMS-2269] [INFO] [dku.analysis.prediction] T-BaRQJvc0 - Publishing mltask-train-done reflected event

@@ -1,0 +1,14 @@
+{
+    "resolved": {
+        "knn": {
+            "p": 2, 
+            "k": 15, 
+            "algorithm": "auto", 
+            "distance_weighting": false, 
+            "leaf_size": 30
+        }, 
+        "skipExpensiveReports": false, 
+        "algorithm": "KNN"
+    }, 
+    "other": {}
+}

@@ -1,0 +1,9 @@
+{
+    "gridSize": 3, 
+    "nThreads": 4, 
+    "metric": "ROC_AUC", 
+    "gridPoints": [], 
+    "timeout": null, 
+    "startedAt": 1620414058694, 
+    "nSplits": 3
+}

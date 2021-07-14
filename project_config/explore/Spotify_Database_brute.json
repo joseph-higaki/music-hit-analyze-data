@@ -1,0 +1,89 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "col_0": 100,
+      "Pos": 100,
+      "Wks": 100,
+      "T10": 100,
+      "Pk": 100,
+      "X?": 100,
+      "PkStreams": 113,
+      "Total": 100,
+      "ARTIST URL": 169,
+      "TRACK": 169,
+      "song name": 218,
+      "album": 225,
+      "artist": 148,
+      "release_date": 134,
+      "length": 100,
+      "popularity": 100,
+      "danceability": 105,
+      "acousticness": 105,
+      "energy": 100,
+      "instrumentalness": 135,
+      "liveness": 100,
+      "loudness": 100,
+      "speechiness": 100,
+      "tempo": 100,
+      "time_signature": 120,
+      "mode": 100,
+      "valence": 100,
+      "key": 100,
+      "release_month": 113,
+      "Top100": 100,
+      "Top1000": 100,
+      "Top2000": 100,
+      "Top2500": 100,
+      "music_story_id": 120,
+      "instagram_url": 300,
+      "instagram_username": 150,
+      "instagram_followers": 158
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

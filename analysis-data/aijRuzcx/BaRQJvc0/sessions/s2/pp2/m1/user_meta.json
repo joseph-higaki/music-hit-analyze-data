@@ -1,0 +1,11 @@
+{
+  "description": "",
+  "name": "K Nearest Neighbors (grid) (TEST)",
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.4
+}

@@ -1,0 +1,2594 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "top_2000",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Total",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Wks",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "T10",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pk",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PkStreams",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "length",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "popularity",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "danceability",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "acousticness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "energy",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instrumentalness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "liveness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "loudness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "speechiness",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "tempo",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "time_signature",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "mode",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "valence",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "key",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "release_month",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "instagram_followers",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Wks",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TDY0MeU"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Yf0MrYl"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ReMsxoT"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "wVlbslY"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "0hrc2yQ"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Wks",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3VfbQNE"
+              }
+            ],
+            "id": "qwIARut"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "T10",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bISLlBw"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "K00ydBO"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MzGxtB5"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VnCTK1d"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bvetkoL"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "T10",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "U57NVKJ"
+              }
+            ],
+            "id": "x0CHOxA"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Pk",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "pWhAeuu"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "pdxn4go"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WgTKLsf"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "yhqnATU"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "hU4fksJ"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Pk",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "2OYmYcR"
+              }
+            ],
+            "id": "qr2LwNM"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "PkStreams",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "G4926OD"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "NCgw2Dq"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "oZsZ2j0"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6G41353"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "qJGijmJ"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PkStreams",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Skr8WLS"
+              }
+            ],
+            "id": "5O7LUJ7"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "length",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4gXhTTA"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YoGmTua"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vB3Adxb"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XnelBv4"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MiLrJDp"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "length",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YVrpn1F"
+              }
+            ],
+            "id": "9XPG6AH"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "popularity",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xu64Po5"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "obvnTIi"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ucjyocs"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3fU39bJ"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "snL1ywo"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "popularity",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "r61I859"
+              }
+            ],
+            "id": "yCHBkNi"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "danceability",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "puIfRra"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1InioBW"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "CkA1Cvk"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Xw3mc4O"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "inoLidq"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "danceability",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bpMhFq6"
+              }
+            ],
+            "id": "pAmd70M"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "acousticness",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "IGuMxuk"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "qA1mkzS"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "M8oQHE3"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "FTIr6kW"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sHj7zPd"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "acousticness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7klX2w3"
+              }
+            ],
+            "id": "kgSIJgp"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "energy",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "871YE0E"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "kGniHCr"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tdqSo2r"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VjMlwTS"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ApfB4P3"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "OYNY9nS"
+              }
+            ],
+            "id": "FmsTpb7"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "instrumentalness",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "qh6LMd0"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Eh56YH2"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "g793DmF"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ZLBdNAK"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "5cts5vX"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instrumentalness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "x3bkjQi"
+              }
+            ],
+            "id": "qwmbGS4"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "liveness",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "qxts0Oq"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "9Fpwvxk"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "QKg8I1b"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "yfa178e"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7UfKW5g"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "liveness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "2N1d80G"
+              }
+            ],
+            "id": "kzcYJsi"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "loudness",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "SS3aWO1"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "0DE0Fx0"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3UNQPvl"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7c4ANVj"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "M3cZnpf"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "loudness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "OhDSDrx"
+              }
+            ],
+            "id": "kFPzUtR"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "speechiness",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XLAeSm0"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "2HRzexN"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "E81Le33"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1K4mpDX"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "l6Yx7D3"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "speechiness",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "rt6L1MN"
+              }
+            ],
+            "id": "VlSAevz"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "tempo",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "KkvxAXi"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "i1PuoDc"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xLHGqE6"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "IRVGDTH"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VtPinOF"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "tempo",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MRLbKFD"
+              }
+            ],
+            "id": "CLJ3aMz"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "time_signature",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "qnKj2ji"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Il7oHU2"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "HMqJ2go"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bqOvDb3"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "i73jxhL"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "time_signature",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "rZNKf4j"
+              }
+            ],
+            "id": "WUi6vPx"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "mode",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sauz61g"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7C2fSiv"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "bYZIe7C"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "oFWh4b3"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "5Lr6eMM"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "mode",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "k3HdIN8"
+              }
+            ],
+            "id": "S9BEBUB"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "valence",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "v3vYvJQ"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "T0rqZrh"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "90FKRgX"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "R9kGR0m"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tCnF4q2"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "valence",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tGw3byj"
+              }
+            ],
+            "id": "oCMUmzH"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "key",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "kf4zmH1"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "E8pX9Gy"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "JC27TZT"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "LOznVtK"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XSMTefG"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "key",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "BtJ1Twf"
+              }
+            ],
+            "id": "2YwXlMf"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "release_month",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "m4i1iKW"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "gvE5nfP"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6GGEeoH"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "IuakpZL"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "KsTyKYb"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "release_month",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nTXMrzS"
+              }
+            ],
+            "id": "UMze27o"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "instagram_followers",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "CoLoZVe"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "uR08t5t"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Ys3AIp6"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "OFW0jvh"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6otiM2U"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "instagram_followers",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Total",
+                  "type": "CONTINUOUS"
+                },
+                "id": "8r8DGwR"
+              }
+            ],
+            "id": "gdypNZW"
+          }
+        ],
+        "id": "XzmpHze"
+      }
+    ],
+    "id": "yuAM3EW"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620227422071
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620227388988
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620413606244
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1620413606244
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/Spotify_Final_Databasecsv_ml",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Pos",
+        "type": "bigint"
+      },
+      {
+        "name": "Wks",
+        "type": "bigint"
+      },
+      {
+        "name": "T10",
+        "type": "bigint"
+      },
+      {
+        "name": "Pk",
+        "type": "bigint"
+      },
+      {
+        "name": "PkStreams",
+        "type": "bigint"
+      },
+      {
+        "name": "Total",
+        "type": "bigint"
+      },
+      {
+        "name": "song name",
+        "type": "string"
+      },
+      {
+        "name": "album",
+        "type": "string"
+      },
+      {
+        "name": "artist",
+        "type": "string"
+      },
+      {
+        "name": "release_date",
+        "type": "string"
+      },
+      {
+        "name": "length",
+        "type": "bigint"
+      },
+      {
+        "name": "popularity",
+        "type": "bigint"
+      },
+      {
+        "name": "danceability",
+        "type": "bigint"
+      },
+      {
+        "name": "acousticness",
+        "type": "bigint"
+      },
+      {
+        "name": "energy",
+        "type": "bigint"
+      },
+      {
+        "name": "instrumentalness",
+        "type": "double"
+      },
+      {
+        "name": "liveness",
+        "type": "bigint"
+      },
+      {
+        "name": "loudness",
+        "type": "bigint"
+      },
+      {
+        "name": "speechiness",
+        "type": "bigint"
+      },
+      {
+        "name": "tempo",
+        "type": "bigint"
+      },
+      {
+        "name": "time_signature",
+        "type": "bigint"
+      },
+      {
+        "name": "mode",
+        "type": "bigint"
+      },
+      {
+        "name": "valence",
+        "type": "bigint"
+      },
+      {
+        "name": "key",
+        "type": "bigint"
+      },
+      {
+        "name": "release_month",
+        "type": "bigint"
+      },
+      {
+        "name": "Top100",
+        "type": "bigint"
+      },
+      {
+        "name": "Top1000",
+        "type": "bigint"
+      },
+      {
+        "name": "Top2000",
+        "type": "bigint"
+      },
+      {
+        "name": "Top2500",
+        "type": "bigint"
+      },
+      {
+        "name": "instagram_username",
+        "type": "string"
+      },
+      {
+        "name": "instagram_followers",
+        "type": "bigint"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

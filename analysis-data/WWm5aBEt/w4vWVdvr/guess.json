@@ -1,0 +1,32 @@
+{
+  "state": "BROKEN",
+  "error": {
+    "errorType": "java.lang.IllegalArgumentException",
+    "message": "All values of the target are equal. Try refreshing the sample.",
+    "detailedMessage": "All values of the target are equal. Try refreshing the sample.",
+    "detailedMessageHTML": "\u003cspan\u003e\u003cspan class\u003d\"err-msg\"\u003eAll values of the target are equal. Try refreshing the sample.\u003c/span\u003e\u003c/span\u003e",
+    "stackTraceStr": "java.lang.IllegalArgumentException: All values of the target are equal. Try refreshing the sample.\n\tat com.dataiku.dip.analysis.ml.prediction.guess.PredictionGuesser.guessPredictionType(PredictionGuesser.java:370)\n\tat com.dataiku.dip.analysis.ml.prediction.guess.PredictionGuesser.initialGuess(PredictionGuesser.java:119)\n\tat com.dataiku.dip.analysis.coreservices.PredictionService$InitialGuessWorkThread.execute(PredictionService.java:916)\n\tat com.dataiku.dip.futures.FutureThreadBase.run(FutureThreadBase.java:96)\n",
+    "stackTrace": [
+      {
+        "file": "PredictionGuesser.java",
+        "line": 370,
+        "function": "com.dataiku.dip.analysis.ml.prediction.guess.PredictionGuesser.guessPredictionType"
+      },
+      {
+        "file": "PredictionGuesser.java",
+        "line": 119,
+        "function": "com.dataiku.dip.analysis.ml.prediction.guess.PredictionGuesser.initialGuess"
+      },
+      {
+        "file": "PredictionService.java",
+        "line": 916,
+        "function": "com.dataiku.dip.analysis.coreservices.PredictionService$InitialGuessWorkThread.execute"
+      },
+      {
+        "file": "FutureThreadBase.java",
+        "line": 96,
+        "function": "com.dataiku.dip.futures.FutureThreadBase.run"
+      }
+    ]
+  }
+}

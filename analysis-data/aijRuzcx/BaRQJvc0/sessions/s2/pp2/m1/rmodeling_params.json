@@ -1,0 +1,63 @@
+{
+  "algorithm": "KNN",
+  "knn_grid": {
+    "k": {
+      "gridMode": "EXPLICIT",
+      "randomMode": "RANGE",
+      "limit": {
+        "min": 1
+      },
+      "values": [
+        5,
+        10,
+        15
+      ],
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 3,
+        "scaling": "LINEAR"
+      }
+    },
+    "distance_weighting": false,
+    "algorithm": "auto",
+    "p": 2,
+    "leaf_size": 30,
+    "enabled": true
+  },
+  "max_ensemble_nodes_serialized": 6000,
+  "metrics": {
+    "evaluationMetric": "ROC_AUC",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "thresholdOptimizationMetric": "F1",
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 3,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "bayesianOptimizer": "SCIKIT_OPTIMIZE",
+    "randomized": true,
+    "seed": 0,
+    "nIter": 0,
+    "nIterRandom": 5,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}
